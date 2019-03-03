@@ -6,7 +6,7 @@ totalDuration = N / fs;
 
 soundsc(x,fs); %%%play the tones
 
-% chuy?n thành các frame, tính energy, n?u l?n h?n threshold cho tr??c s?
+% chuy?n thï¿½nh cï¿½c frame, tï¿½nh energy, n?u l?n h?n threshold cho tr??c s?
 % ch?n
 inc = 250;
 x_frame=enframe(x(:,1), 500, inc)';
@@ -25,7 +25,7 @@ for i = 1:length(idxE) - 1
     end
 end
 
-% v?i m?i nhóm frame, là các tín hi?u dtmf, g?i hàm detect ?? detect
+% v?i m?i nhï¿½m frame, lï¿½ cï¿½c tï¿½n hi?u dtmf, g?i hï¿½m detect ?? detect
 result = [];
 for i = 1:length(Z)
     left = (Z(i,1) - 1) * inc + 1;
